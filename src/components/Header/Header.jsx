@@ -1,9 +1,9 @@
-// import { Link, NavLink } from "react-router-dom"
-import { HeaderComponent, HeaderContainer, Nav, ContactContainer, ContactsWrapper, StyledNavLink, ContText, ContLink} from "./Header.styled";
+import { Container } from "components/App.styled";
+import { HeaderComponent, HeaderContainer, Nav, ContactsWrapper, StyledNavLink } from "./Header.styled";
+import Contacts from "./Contacts";
 import LogoSvg from "./Svg/LogoSvg";
 import PhoneSvg from "./Svg/PhoneSvg";
 import MessageSvg from "./Svg/MessageSvg";
-import { Container } from "components/SecForm/SecForm.styled";
 
 const Header = ()=>{
     return(
@@ -19,24 +19,18 @@ const Header = ()=>{
                 <StyledNavLink to="/contacts">Contacts</StyledNavLink>
             </Nav>
             <ContactsWrapper>
-                <ContactContainer>
-                    <div>
-                    <PhoneSvg/>
-                    </div>
-                    <div>
-                    <ContText>Call us</ContText>
-                    <ContLink href="">(405) 555-0128</ContLink>
-                    </div>
-                </ContactContainer>
-                <ContactContainer>
-                    <div>
-                    <MessageSvg/>
-                    </div>
-                    <div>
-                    <ContText>Talk to us</ContText>
-                    <ContLink href="">hello@createx.com</ContLink>
-                    </div>
-                </ContactContainer>
+        <Contacts
+        svg={<PhoneSvg/>}
+        text={"Call us"}
+        contact={"(405) 555-0128"}
+        />
+
+        <Contacts
+        svg={<MessageSvg/>}
+        text={"Talk to us"}
+        contact={"hello@createx.com"}
+        />
+
             </ContactsWrapper>
             </HeaderContainer>
         </HeaderComponent>

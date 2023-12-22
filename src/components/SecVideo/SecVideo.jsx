@@ -1,6 +1,5 @@
-import { Title, Text, Video, VideoWrapper, Overlay} from "./SecVideo.styled";
-import { Section } from "components/SecForm/SecForm.styled";
-import { Container } from "components/SecForm/SecForm.styled";
+import { Video, VideoWrapper, Overlay} from "./SecVideo.styled";
+import { Text, Title, Section, Container } from "components/App.styled";
 import PlaySvg from "./Svg/PlaySvg";
 import SoundSvg from "./Svg/SoundSvg";
 

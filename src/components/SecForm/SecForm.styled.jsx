@@ -1,16 +1,5 @@
 import styled from '@emotion/styled';
 
-export const Section = styled.section`
-    padding-top: 60px;
-    padding-bottom: 60px;`
-
-export const Container = styled.div`
-width: 1440px;
-margin-left: auto;
-margin-right: auto;
-padding-left: 100px;
-padding-right: 100px;`
-
 export const FormTitle = styled.h2`
 color: #1E212C;
 text-align: center;
@@ -26,7 +15,6 @@ gap: 24px;
 margin-top: 32px;
 align-items: flex-end;
 margin-bottom: 48px;
-
 `
 
 export const Label = styled.label`
@@ -71,6 +59,5 @@ export const FormWrapper = styled.div`
 border-radius: 4px;
 background: #FFF;
 box-shadow: 0px 4px 4px -4px rgba(30, 33, 44, 0.03), 0px 12px 10px -6px rgba(154, 156, 165, 0.04), 0px 30px 24px -10px rgba(154, 156, 165, 0.05), 0px 80px 80px -20px rgba(154, 156, 165, 0.08);
-
 padding-bottom: 48px;
 `

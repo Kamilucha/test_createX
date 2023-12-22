@@ -6,8 +6,6 @@ export const StyledNavLink = styled(NavLink)`
   font-size: 16px;
   font-weight: 700;
   line-height: 25.6px;
-  gap: 40px;
-  margin-left: 40px;
   transition: background-color 0.3s ease;
 
   &:hover {
@@ -31,8 +29,6 @@ padding: 10px 0;
 export const HeaderContainer = styled.div`
 display: flex;
 align-items: center;
-margin: auto;
-gap: auto;
 justify-content: space-between;
         `
 
@@ -40,18 +36,18 @@ justify-content: space-between;
 export const Nav = styled.nav`
 display: flex;
         align-items: center;
-        padding-left: 20px;
+        margin-left: 60px;
         height: 50px;
-        gap: 20px
+        gap: 40px
         `
 
 export const ContactContainer = styled.li`
-display:flex;
+display: flex;
 `
 export const ContactsWrapper = styled.ul`
 display:flex;
 gap: 13px;
-margin-left: auto;
+margin-left: 171px;
 `
 
 export const ContText = styled.p`

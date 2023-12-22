@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { FormTitle, Form, Label, Section, Input, Button, FormWrapper, Container } from './SecForm.styled';
+import { Container, Section } from 'components/App.styled';
+import { FormTitle, Form, Label, Input, Button, FormWrapper } from './SecForm.styled';
 
 const SecForm = ()=>{
     const [formData, setFormData] = useState({

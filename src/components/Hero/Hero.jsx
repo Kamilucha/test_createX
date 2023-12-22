@@ -1,10 +1,14 @@
+import { Container, Section } from "components/App.styled";
 import { HeroTextWrap, HeroBg, HeroTitle, Span, HeroText, ButtonsList, Button, DividerHero, SliderList, SliderItem, Div } from "./Hero.styled"
 
 const Hero = () =>{
 
     return(
+        <Section  className="hero"  >
+        <Container className="heroContainer">
             <Div>
-        <HeroBg>
+       <HeroBg></HeroBg>
+            </Div>
             <HeroTextWrap>
         <HeroTitle>
             CREATE<Span>X</Span> CONSTRUCTION
@@ -38,8 +42,8 @@ const Hero = () =>{
                 <DividerHero/>
                 </SliderItem>
             </SliderList>
-        </HeroBg>
-            </Div>
+        </Container>
+        </Section>
     )
 }
 

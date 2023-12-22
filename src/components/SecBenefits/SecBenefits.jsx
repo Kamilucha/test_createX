@@ -1,7 +1,5 @@
-import { Title, Text } from "components/SecVideo/SecVideo.styled";
+import { Text, Title, Section, Container } from "components/App.styled";
 import { BenefitsList, BenefitsItem, BenefitsTitle, BenefitsText, Divider } from "./SecBenefits.styled";
-import { Section } from "components/SecForm/SecForm.styled";
-import { Container } from "components/SecForm/SecForm.styled";
 import LikeSvg from "./Svg/LikeSvg";
 import HandSvg from "./Svg/Hand";
 import SlippersSvg from "./Svg/Slippers";

@@ -1,19 +1,22 @@
 import styled from '@emotion/styled';
 
 export const HeroBg = styled.div`
-height: 100vh;
+  height: 100%;
   width: 100%;
   background: linear-gradient(0deg, rgba(30, 33, 44, 0.60) 0%, rgba(30, 33, 44, 0.60) 100%), 
               url('https://s3-alpha-sig.figma.com/img/d30c/d090/9244cd6a3be94089053b70a898e7e451?Expires=1704067200&Signature=VY7kI9U3MbEuEUwORwjZnhPfvJLBCZVe-qC6SxM2i~EyL5UI4w7luaFoWkRq~rdERSh0IlUdYQRiCsHwnzu2oIu2XJeTxqDKg5C6rmjnKY84NQks9OyGp7WXqkYE1Fc4S8bdSsvxisycmDp3ZgoBTo2BwT8oEKX14TeMphq-FMRUPVIbr-R6Zy83byraBZaWVdVDDRWjHsZIkGMLYAyNTAlKQ24fEItDCTCR0qFl99KO6~KF8vOKHedN0V9Bzi64iptucsbfyVj3BU3X4GO8EBbze0fKR4Em8qnW5Hy-jWSbqe789W0JkiBQYnnmnw9C8eyhJnvn5Ke5BuGwBKfNJA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4');
   background-size: cover;
   background-position: center;
+  transform-origin: center;
 `;
 
 export const HeroTextWrap = styled.div`
-
-text-align: center;
+text-align: left;
+padding-top: 220px;
 color: white;
-max-width: 600px;`
+max-width: 600px;
+position: relative;
+`
 
 export const HeroTitle = styled.h1`
 font-size: 72px;
@@ -39,9 +42,10 @@ gap: 24px;`
 
 export const Button = styled.button`
 display: flex;
+margin-top: 61px;
 padding: 0px 40px;
 flex-direction: column;
-align-items: center;
+align-items: left;
 gap: 10px;
 border-radius: 4px;
 background-color: inherit;
@@ -69,6 +73,7 @@ text-transform: uppercase;
   background: #FFF; 
 `
 export const SliderList = styled.ul`
+margin-top: 100px;
 display:flex;
 gap: 4px;
 `
@@ -85,7 +90,12 @@ opacity: 0.3;
   }`
 
 export const Div = styled.div`
-display: flex;`
+position: absolute;
+left: 100%;
+transform: translateX(-100%);
+height: 770px;
+width: 100%;
+overflow: hidden;`
 
 
 
